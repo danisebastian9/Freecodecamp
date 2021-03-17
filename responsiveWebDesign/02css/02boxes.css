@@ -18,11 +18,21 @@
 .red-box {
     background-color: crimson;
     color: #fff;
-    padding: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px; 
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .blue-box {
     background-color: blue;
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px 20px 40px; /* Clockwise: up right down left */
+    margin: 40px 20px 20px 40px;
+
 }
+
