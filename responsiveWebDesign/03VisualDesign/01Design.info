@@ -1,0 +1,80 @@
+* Crea un balance visual usando la propiedad text-align
+
+    Esta sección del currículo se enfoca en el Diseño Visual Aplicado. 
+    El primer grupo de desafíos se basa en el diseño de la tarjeta 
+    provista para mostrar un número de principios fundamentales.
+
+    El texto es frecuentemente una gran parte del contenido web. 
+    CSS tiene múltiples opciones para alinearlo con la propiedad text-align.
+
+    text-align: justify; hace que todas las líneas de texto, 
+    excepto la última línea, se encuentren con los lados
+    izquierdo y derecho de la caja.
+
+    text-align: center; centra el texto
+
+    text-align: right; alinea el texto hacia la derecha
+
+    Y text-align: left; (opción por defecto) alinea el texto hacia la izquierda.
+
+
+<strong></strong     =   font-weight: bold; 
+
+<u></u>              =   text-decoration: underline;
+
+<em></em>            =   font-style: italic; 
+
+<s></s>              =   text-decoration: line-through;
+
+
+
+* Agrega box-shadow a un elemento tipo tarjeta
+    La propiedad box-shadow aplica una o más sombras a un elemento.
+
+    La propiedad box-shadow toma valores para
+
+    offset-x (qué tan lejos extender la sombra horizontalmente desde el elemento),
+    offset-y (qué tan lejos extender la sombra verticalmente desde el elemento),
+    blur-radius,
+    spread-radius y
+    color, en ese orden.
+    Los valores blur-radius y spread-radius son opcionales.
+
+    Se pueden crear múltiples box-shadows usando comas para separar las propiedades 
+    de cada elemento box-shadow.
+
+    A continuación un ejemplo de CSS para crear múltiples sombras con un poco de 
+    desenfoque, con colores negros casi transparentes:
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+* Disminuir la opacidad de un elemento
+    La propiedad opacity en CSS se usa para ajustar la opacidad o, por el contrario, 
+    la transparencia de un elemento.
+
+    Un valor de 1 es opaco, que no es transparente en absoluto.
+    Un valor de 0.5 es la mitad transparente.
+    Un valor de 0 es completamente transparente.
+    El valor dado se aplicará a todo el elemento, ya sea una imagen con cierta 
+    transparencia, o los colores de primer plano y fondo para un bloque de texto.
+
+
+
+* Usa la propiedad text-transform para hacer el texto mayúsculas
+    La propiedad text-transform en CSS se utiliza para cambiar la apariencia del texto. 
+    Es una forma conveniente de asegurarse de que el texto en una página web aparezca 
+    de manera consistente, sin tener que cambiar el contenido del texto de los 
+    elementos HTML reales.
+
+    La siguiente tabla muestra como los diferentes valores de text-transform 
+    cambian el texto de ejemplo "Transformame".
+
+    Valor	Resultado
+    lowercase	"Transformame"
+    uppercase	"TRANSFORMAME"
+    capitalize	"Transformame"
+    initial	Usa el valor predeterminado
+    inherit	Utiliza el valor text-transform del elemento principal
+    none	Predeterminado: Usa el texto original
+
