@@ -1,0 +1,32 @@
+Utiliza código hexadecimal (hex code) para indicar colores específicos
+¿Sabías que hay otras maneras de representar colores en CSS? Una de estas 
+formas se llama código hexadecimal, o código hex (hex code) para abreviar.
+
+Generalmente usamos decimales, o números de base 10, los cuales utilizan los 
+símbolos del 0 al 9 para representar cada dígito. Los números hexadecimales 
+(o hex) son números de base 16. Esto significa que utilizan dieciseis símbolos 
+distintos. Al igual que en los números decimales, en hexadecimal los símbolos 0-9 
+representan los valores de cero a nueve. Luego A,B,C,D,E,F representan los 
+valores de diez a quince. Todos estos símbolos juntos, de 0 a F, pueden representar 
+un dígito en hexadecimal, lo que da un total de 16 valores posibles. Puedes 
+encontrar más información sobre los números hexadecimales aquí.
+
+En CSS, podemos representar colores utilizando 6 dígitos hexadecimales, dos para 
+los componentes de rojo (R), verde (G) y azul (B). Por ejemplo, #000000 corresponde 
+al color negro, y también es el valor más bajo posible. Puedes encontrar más 
+información sobre el sistema de color RGB aquí.https://es.wikipedia.org/wiki/RGB
+
+
+Repasemos: En código hexadecimal se utilizan 6 dígitos hexadecimales para 
+representar los colores, dos para el componente rojo (R), verde (G) y azul (B).
+
+¡A partir de estos tres colores puros (rojo, verde y azul) podemos variar 
+las cantidades de cada componente de color para crear más de 16 millones de colores distintos!
+
+Por ejemplo, el naranja es rojo puro mezclado con algo de verde y nada 
+de azul. En hex code, esto se traduce como #FFA500.
+
+El dígito 0 es el número más bajo en hex code, y representa la ausencia 
+total de color.
+
+El dígito F es el número más alto en hex code, y representa el brillo máximo.
