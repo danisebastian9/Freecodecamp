@@ -1,0 +1,20 @@
+Hereda variables CSS
+
+Cuando creas una variable, queda disponible para que 
+la utilices dentro del selector en el que la hayas creado. 
+Esa variable también estará disponible en cualquiera de 
+los descendientes de ese selector. Esto ocurre porque las 
+variables CSS son heredadas, al igual que las propiedades comunes.
+
+Para hacer uso de la herencia, las variables CSS suelen ser 
+definidas en el elemento :root.
+
+:root es un "pseudo-class selector" (selector de pseudo-clase) 
+que corresponde al elemento raíz o "root" del documento, 
+que generalmente es el elemento html. Al crear tus variables 
+en :root, estarán disponibles globalmente y se podrán acceder 
+desde cualquier otro selector en la hoja de estilo.
+
+  :root {
+    --penguin-belly: pink;
+  }
