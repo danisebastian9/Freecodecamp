@@ -67,6 +67,61 @@
         cian	        #00FFFF
         frambuesa	    #FF007F
 
+* Adjustar los colores de varios elementos para colores complementarios
+
+    En el desafío de colores complementarios vimos que al colocar dos colores 
+    opuestos del círculo cromático, parecen más vivos. Sin embargo, el contraste 
+    visual fuerte puede ser molesto si se utiliza en un sitio web y algunos veces 
+    pueden hacer que el texto sea difícil de leer si está dentro de un 
+    complementary-color background. En la práctica, usualmente se usa uno de los 
+    colores como dominante y los complementarios se usan para atraer atención 
+    visual a cierto contenido dentro de la página.
+
+
+* Ajusta el matiz de un color
+
+    Los colores tienen varias características tales como el matiz, la saturación 
+    y la ligereza. CSS3 introdujo la propiedad hsl() como una forma alternativa 
+    de elegir un color indicando directamente estas características.
+
+    Se suele pensar que Hue es el "color". Si imaginas un espectro de colores 
+    con un rojo en la izquierda que se torna verde en el medio y azul en la derecha, 
+    el tono es donde cabe un color a lo largo de esta línea. En hsl(), el tono usa 
+    un concepto de círculo cromático en lugar del espectro, donde el ángulo del 
+    color en el círculo se da como un valor entre 0 y 360.
+
+    Saturation es la cantidad de gris en un color. Un color totalmente saturado 
+    no tiene gris y un color mínimamente saturado es casi completamente gris. 
+    Esto se da como un porcentaje con 100% de saturación.
+
+    Lightness es la cantidad de blanco en un color. Un porcentaje se da desde 
+    0% (negro) hasta 100% (blanco), donde 50% es el color normal.
+
+    Aquí hay algunos ejemplos de hsl() con colores de iluminación normales 
+    y completamente saturados:
+
+                Color	            HSL
+            rojo	        hsl(0, 100 %, 50 %)
+            amarillo	    hsl(60, 100 %, 50 %)
+            verde	        hsl(120, 100 %, 50 %)
+            cian	        hsl(180, 100 %, 50 %)
+            azul	        hsl(240, 100 %, 50 %)
+            magenta	        hsl(300, 100 %, 50 %)
+
+
+* Ajusta el tono de un color
+
+    La opción hsl() en CSS también hace que sea sencillo ajustar el tono de un color. 
+    Mezclar blanco con un tono puro crea un tinte de ese color y añadir negro 
+    una sombra. De forma alternativa, un tono se produce al añadir gris 
+    o tintes y sombras. Recuerda que la 's' y 'l' del hsl() representan saturación 
+    y ligereza, respectivamente. El porcentaje de saturación cambia la cantidad de 
+    gris y el porcentaje de luz determina el porcentaje de blanco o de negro que hay 
+    en el color. Esto es útil cuando se tiene un tono base que se quiere, pero 
+    necesita variaciones diferentes del mismo.
+
+
+
 
 
 

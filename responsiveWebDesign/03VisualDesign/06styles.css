@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+header {
+  background-color: #09a7a1;
+  color: white;
+  padding: 0.25em;
+}
+h2 {
+  color: #09a7a1;
+}
+button {
+  background-color: #ff790e;
+  color: white;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+}
+footer {
+  background-color: #09a7a1;
+  color: white;
+  padding: 0.5em;
+}
