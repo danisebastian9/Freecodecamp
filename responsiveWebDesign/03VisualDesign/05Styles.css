@@ -1,0 +1,27 @@
+body {
+    background-color: #FFFFFF;
+}
+.blue {
+    background-color: #0000FF;
+}
+.yellow {
+    background-color: #FFF000;
+}
+div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.orange {
+  background-color: #ffa500;
+}
+
+.cyan {
+  background-color: #00ffff;
+}
+
+.raspberry {
+  background-color: #FF007F;
+}
+
