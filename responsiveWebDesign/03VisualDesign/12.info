@@ -1,0 +1,61 @@
+* Crea un gráfico usando CSS
+
+    Al manipular diferentes selectores y propiedades, puedes hacer figuras interesantes. 
+    Una de las figuras más fáciles de intentar es la luna creciente. 
+    Para este desafío necesitas trabajar con la propiedad box-shadow 
+    que aplica la sombra de un elemento, junto con la propiedad border-radius 
+    que controla la redondez de las esquinas del elemento.
+
+    Crearás un objeto redondo y transparente con una sombra nítida que está 
+    ligeramente desplazada hacia un lado - la sombra en realidad va a ser la 
+    figura de luna que verás.
+
+    Para crear un objeto redondo, la propiedad border-radius se le debe 
+    asignar un valor de 50%.
+
+    Puede que recuerdes de un desafío anterior que la propiedad box-shadow 
+    toma valores para offset-x, offset-y, blur-radius, spread-radius y un 
+    valor para el color, en ese orden. Los valores blur-radius y 
+    spread-radius son opcionales.
+
+* Crea una forma más compleja usando CSS y HTML
+
+    Una de las formas más populares en el mundo es la forma del corazón, 
+    y en este desafío crearás una usando CSS puro. Pero primero, debes comprender 
+    los pseudo-elements ::before y ::after. Estos pseudo-elements se utilizan para 
+    agregar algo antes o después de un elemento seleccionado. En el siguiente ejemplo, 
+    se utiliza un pseudo-elemento ::before para agregar un rectángulo a un elemento 
+    con la clase heart:
+
+        .heart::before {
+        content: "";
+        background-color: yellow;
+        border-radius: 25%;
+        position: absolute;
+        height: 50px;
+        width: 70px;
+        top: -50px;
+        left: 5px;
+        }
+
+    Para que los pseudo-elements ::before y ::after funcionen correctamente, 
+    deben tener una propiedad content definida. Esta propiedad generalmente se usa 
+    para agregar cosas como una foto o texto al elemento seleccionado. Cuando se 
+    utilizan los pseudo-elements ::before y ::after para crear formas, la propiedad 
+    content sigue siendo necesaria, pero se establece en una cadena vacía. En el 
+    ejemplo anterior, el elemento con la clase de heart tiene un pseudo-element 
+    ::before que produce un rectángulo amarillo con una altura y un ancho de 
+    50px y 70px, respectivamente. Este rectángulo tiene esquinas redondeadas 
+    debido a su 25% border-radius y está posicionado absolutamente a 5px desde 
+    la izquierda y 50px por encima de la parte superior del elemento.
+
+
+
+
+
+
+
+
+
+
+    

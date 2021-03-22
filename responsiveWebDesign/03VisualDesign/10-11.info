@@ -1,0 +1,36 @@
+* Utiliza la propiedad de escala de transformación CSS para escalar un elemento al desplazarse
+
+    La propiedad transform tiene una variedad de funciones que el permiten escalar, mover, 
+    rotar, sesgar, etc., sus elementos. Cuando se usa con pseudo-classes como :hover que 
+    especifican un cierto estado de un elemento, la propiedad transform puede agregar 
+    fácilmente interactividad a sus elementos.
+
+    Aquí hay un ejemplo para escalar los elementos de párrafo a 2.1 veces su tamaño original:
+
+        p:hover {
+        transform: scale(2.1);
+        }
+
+    <strong x=id="1"> Nota: La aplicación de una transformación a un elemento div también 
+    afectará a cualquier elemento secundario contenido de el div.
+
+
+* Utiliza la propiedad de transformación CSS skewX para inclinar un elemento a lo largo del eje X
+    
+    La siguiente función de la propiedad transform es skewX(), que inclinar el elemento 
+    seleccionado a lo largo de su eje X (horizontal).
+
+    El siguiente código inclina el elemento de párrafo en -32 grados a lo largo del eje X.
+
+        p {
+        transform: skewX(-32deg);
+        }
+
+
+* Utiliza la propiedad de transformación CSS skewY para inclinar un elemento a lo largo del eje Y
+
+    Dado que la función skewX() inclina el elemento seleccionado a lo largo del eje X en un 
+    grado dado, no sorprende que la propiedad skewY() incline un elemento a lo largo del 
+    eje Y (vertical).
+
+
