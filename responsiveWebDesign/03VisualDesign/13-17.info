@@ -1,0 +1,169 @@
+* Aprende como funcionan las propiedades de CSS @keyframes y animación
+
+    Para animar un elemento, necesitas conocer las propiedades de animación 
+    y la regla @keyframes. Las propiedades de animación controlan como debe 
+    comportarse la animación y la regla @keyframes controla lo que sucede 
+    durante esa animación. Hay ocho propiedades de animación en total. 
+    Este desafío lo mantendrá simple y cubrirá primero los dos más importantes:
+
+    animation-name establece el nombre de la animación, que luego es utilizada 
+    por @keyframes para decirle a CSS que reglas van con que animaciones.
+
+    animation-duration establece el tiempo de la animación.
+
+    @keyframes es como especificar exactamente lo que sucede dentro de la 
+    animación durante la duración. Esto se hace dando propiedades CSS para 
+    "marcos" específicos durante la animación, con porcentajes que van del 
+    0% al 100%. Si comparas esto con una película, las propiedades de CSS 
+    de 0% es como se muestra el elemento en la escena inicial. Las 
+    propiedades de CSS con 100% es como aparece el elemento al final, 
+    justo antes de que rueden los créditos. Luego, CSS aplica la magia 
+    para hacer la transición del elemento durante la duración dada para 
+    representar la escena. Aquí hay un ejemplo para ilustrar el uso de 
+    @keyframes y las propiedades de animación:
+
+        #anim {
+        animation-name: colorful;
+        animation-duration: 3s;
+        }
+
+        @keyframes colorful {
+        0% {
+            background-color: blue;
+        }
+        100% {
+            background-color: yellow;
+        }
+        }
+
+    Para el elemento anim id, el fragmento de codigo anterior establece el 
+    animation-name para colorful y establece el animation-duration a 
+    3 segundos. A continuación, la regla @keyframes vincula a las 
+    propiedades de animación con el nombre colorful. Establece el color 
+    en azul al principio de la animación (0%) que pasara a amarillo al 
+    final de la animación (100%). No estás limitado solo a las transiciones
+    de principio a fin, puedes establecer propiedades para el elemento para 
+    cualquier porcentaje entre 0% y 100%.
+
+
+* Puedes usar CSS @keyframes para cambiar el color de un botón en su estado de desplazamiento.
+
+Aquí hay un ejemplo de como cambiar el ancho de una imagen al pasar sobre ella:
+
+    <style>
+    img:hover {
+        animation-name: width;
+        animation-duration: 500ms;
+    }
+
+    @keyframes width {
+        100% {
+        width: 40px;
+        }
+    }
+    </style>
+
+    <img src="https://bit.ly/smallgooglelogo" alt="Google's Logo" />
+
+
+* Modifica el modo de relleno de una animación (animation-fill-mode)
+
+    Eso es genial, pero aún no funciona bien. Observa como la animación se restablece 
+    después de que haya pasado 500ms, haciendo que el botón vuelva al color original. 
+    Lo que quieres es que el botón permanezca resaltado.
+
+    Esto se puede hacer estableciendo la propiedad animation-fill-mode en forwards. 
+    El animation-fill-mode especifica el estilo aplicado a un elemento cuando la 
+    animación ha finalizado. Puedes configurarlo así:
+
+    animation-fill-mode: forwards;
+
+
+* Crear movimiento usando animación CSS
+
+    Cuando los elementos tienen una position, como fixed o relative, las propiedades 
+    de desplazamiento CSS right, left, top y bottom se pueden usar en las reglas de 
+    animación para crear movimiento.
+
+    Como se muestra en el siguiente ejemplo, puedes empujar el elemento hacia abajo 
+    y luego hacia arriba estableciendo la propiedad top fotograma clave (keyframe) 
+    a 50% en 50px, pero estableciéndolo en 0px para el primer fotograma clave (0%) 
+    y el último a (100%).
+
+        @keyframes rainbow {
+        0% {
+            background-color: blue;
+            top: 0px;
+        }
+        50% {
+            background-color: green;
+            top: 50px;
+        }
+        100% {
+            background-color: yellow;
+            top: 0px;
+        }
+        }
+
+
+*  Crear dirección visual desvaneciendo un elemento de izquierda a derecha
+
+    Para este desafío, cambiarás la opacidad (opacity) de un elemento animado para que 
+    se desvanezca gradualmente a medida que llega al lado derecho de la pantalla.
+
+    En la animación mostrada, el elemento redondo con el fondo degradado se mueve hacia 
+    la derecha con la marca del 50% de la animación según la regla @keyframes.
+
+
+* Animar los elementos continuamente utilizando un contador de animaciones infinitas
+
+    En los desafíos anteriores, vimos cómo utilizar algunas de las propiedades de la 
+    animación y la regla @keyframes. Otra propiedad de animación es la 
+    animation-iteration-count la cual te permite controlar cuántas veces te gustaría 
+    hacer un bucle a través de la animación. Por ejemplo:
+
+    animation-iteration-count: 3;
+
+    En este caso, la animación se detendrá después de ejecutarse 3 veces, pero es 
+    posible hacer que la animación se ejecute continuamente estableciendo ese 
+    valor en infinite.
+
+
+* Haz latir un corazón con CSS usando un recuento de animación infinita
+    
+    Aquí hay un ejemplo más de animación con la propiedad animation-iteration-count 
+    que usa el corazón que diseñaste en un desafío anterior.
+
+    La animación del latido de un segundo consta de dos piezas animadas. 
+    Los elementos heart (incluyendo las piezas :before y :after) se animan para 
+    cambiar el tamaño usando la propiedad transform, y el fondo div se anima para 
+    cambiar su color usando la propiedad background.
+
+
+* Elementos animados con fluctuaciones
+
+    Hay muchas formas de alterar la cantidad de animaciones de elementos 
+    similares con animaciones. Hasta ahora, esto se ha logrado al aplicar 
+    una propiedad animation-iteration-count y estableciendo reglas @keyframes.
+
+    A modo de ilustración, la animación de la derecha consta de dos estrellas, 
+    cada una de las cuales disminuye en tamaño y opacidad en la marca del 20% 
+    en la regla @keyframes, que crea la animación centelleante. Puede cambiar 
+    la regla @keyframes para uno de los elementos, así las estrellas titilan 
+    con diferentes ritmos.
+
+* Animar múltiples elementos con ritmos diferentes
+
+    En el desafío anterior, cambiaste el ritmo de la animación para dos 
+    elementos similares animados alterando sus reglas @keyframes. 
+    Puedes lograr el mismo objetivo manipulando la animation-duration 
+    de múltiples elementos.
+
+    En la animación que se ejecuta en el editor de código, hay tres estrellas 
+    en el cielo que brillan a la misma velocidad en un ciclo continuo. 
+    Para hacerlos titilar con diferentes ritmos, puedes establecer la propiedad 
+    animation-duration con diferentes valores para cada elemento.
+
+
+
+
