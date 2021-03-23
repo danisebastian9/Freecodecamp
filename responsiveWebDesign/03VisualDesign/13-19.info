@@ -164,6 +164,119 @@ Aquí hay un ejemplo de como cambiar el ancho de una imagen al pasar sobre ella:
     Para hacerlos titilar con diferentes ritmos, puedes establecer la propiedad 
     animation-duration con diferentes valores para cada elemento.
 
+* Cambia la duración de las animaciones con palabras clave
+
+    En las animaciones CSS, la propiedad animation-timing-function 
+    controla qué tan rápido un elemento animado cambia sobre la duración 
+    total de la animación. Si la animación es un carro moviéndose de un 
+    punto A a un punto B en un tiempo establecido (tu animation-duration), 
+    la animation-timing-function dicta cómo el carro acelera y desacelera 
+    durante el transcurso en marcha.
+
+    Existe un número de palabras clave predefinidas disponibles para las 
+    opciones populares. Por ejemplo, el valor por defecto es ease, que 
+    empieza despacio, acelera en el medio y luego reduce la velocidad de 
+    nuevo al final. Otras opciones incluye ease-out, que es rápida al 
+    inicio y luego reduce la velocidad, ease-in, que es lenta al inicio 
+    y luego acelera al final, o linear, que aplica una velocidad constante 
+    a lo largo de la animación.
+
+
+* Descubre como funcionan las curvas de Bezier
+
+    El último desafío introdujo la propiedad animation-timing-function 
+    y algunas palabras clave que cambian la velocidad de una animación 
+    a lo largo de su duración. CSS ofrece una opción distinta a las 
+    palabras clave que proporciona un control aún más fino sobre cómo 
+    se desarrolla la animación, a través del uso de curvas Bezier.
+
+    En las animaciones CSS, las curvas Bezier se utilizan con la función 
+    cubic-bezier. La forma de la curva representa cómo se desarrolla la 
+    animación. La curva vive en un sistema de coordenadas de 1 a 1. 
+    El eje X de este sistema de coordenadas es la duración de la animación 
+    (piénsa en una escala de tiempo), y el eje Y es el cambio en la animación.
+
+    La función cubic-bezier consta de cuatro puntos principales que se 
+    encuentran en esta cuadrícula de 1 por 1: p0, p1, p2 y p3. 
+    p0 y p3 están configurados para ti: son los puntos inicial y final 
+    que siempre se encuentran respectivamente en el origen (0, 0) y (1, 1). 
+    Establece los valores x e y para los otros dos puntos, 
+    y donde los coloca en la cuadrícula determina la forma de la 
+    curva para la animación que debe seguir. Esto se hace en CSS 
+    declarando los valores x e y de los puntos "anchor" p1 y p2 de la 
+    siguiente forma:(x1, y1, x2, y2). Juntando todo, aquí hay un ejemplo 
+    de una curva de Bezier en codigo CSS:
+
+        animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+
+    En el ejemplo anterior, los valores x e y son equivalentes para 
+    cada punto (x1 = 0.25 = y1 y x2 = 0.75 = y2), que si recuerdas la 
+    clase de geometría, da como resultado una línea que se extiende desde 
+    el origen hasta el punto (1, 1). Esta animación es un cambio lineal 
+    de un elemento durante la duración de una animación, y es lo mismo 
+    que usar la palabra clave linear. En otras palabras, cambia a una 
+    velocidad constante.
+
+
+* Usa una curva de Bezier para mover un gráfico
+
+    Un desafío anterior discutió la palabra clave ease-out que describe 
+    un cambio de animación que se acelera primero y luego se ralentiza 
+    al final de la animación. A la derecha, se muestra la diferencia 
+    entre la palabra clave ease-out (para el elemento azul) y la palabra 
+    clave linear (para el elemento rojo). Se pueden lograr progresiones 
+    de animación similares a la palabra clave ease-out utilizando una 
+    función de curva Bezier cúbica personalizada.
+
+    En general, el cambio de los puntos de anclaje p1 y p2 impulsa la 
+    creación de diferentes curvas Bezier, que controlan como la animación 
+    progresa a través del tiempo. Aquí hay un ejemplo de una curva de 
+    Bezier que usa valores para imitar el estilo de facilidad:
+
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+    Recuerda que todas las funciones cubic-bezier comienzan con p0 
+    en (0, 0) y terminan con p3 en (1, 1). En este ejemplo, la curva 
+    se mueve más rápido a través del eje Y (comienza en 0, va a p1 y 
+    valor de 0, luego va a p2 y valor de 1) que se mueve a través del 
+    eje X (0 para iniciar, luego 0 para p1, hasta 0.58 para p2. 
+    Como resultado, el cambio en el elemento animado progresa más 
+    rápido que el tiempo de la animación para ese segmento. 
+    Hacia el final de la curva, la relación entre el cambio en los 
+    valores X e Y se invierte: el valor y se mueve de 1 a 1 
+    (sin cambios), y los valores X se mueven de 0.58 a 1, 
+    lo que hace que los cambios de animación progresen más lentamente 
+    en comparación con la duración de la animación.
+
+
+* Haz que el movimiento sea más natural usando una curva de Bezier
+
+    Este desafío anima un elemento para replicar el movimiento de una 
+    pelota que hace rebotes. Los desafíos anteriores cubrirán las 
+    curvas cúbicas de Bezier linear y ease-out, sin embargo, ninguna 
+    representa el movimiento de rebotes con precisión. Necesitas 
+    personalizar una curva de Bezier para esto.
+
+    La función animation-timing-function se realiza automáticamente 
+    en cada fotograma clave (keyframe) cuando el animation-iteration-count 
+    se establece en infinito. Dado que hay una regla de fotogramas clave 
+    establecida en el medio de la duración de la animación 
+    (en 50%, da como resultado dos progresiones de animación idénticas 
+    en el movimiento hacia arriba y hacia abajo de la pelota.
+
+    La siguiente curva cúbica de Bezier simula el movimiento de rebotes:
+
+        cubic-bezier(0.3, 0.4, 0.5, 1.6);
+
+    Observa que el valor de y2 es mayor que 1. Aunque la curva cúbica 
+    de Bezier se mapea en un sistema de coordenadas 1 por 1, y solo 
+    puede aceptar valores x de 0 a 1, el valor y se puede establecer 
+    en números mayores que uno. Esto da como resultado un movimiento 
+    de rebote que es ideal para simular la pelota rebotando.
+
+
+
+
 
 
 
