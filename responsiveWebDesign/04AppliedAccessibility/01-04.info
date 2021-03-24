@@ -218,6 +218,131 @@
     o transcripciones pero necesita saber para incluirlos.
 
 
+* Mejora la accesibilidad de gráficos con el elemento figure
+
+    HTML5 introdujo el elemento figure y el figcaption relacionado. 
+    Cuando se usan juntos, estos elementos envuelven una representación 
+    visual (como puede ser una imagen, diagrama o gráfico) junto con su 
+    leyenda. Envolviendo estos elementos da un impulso de accesibilidad 
+    doble al agrupar semánticamente el contenido relacionado y proporciona 
+    una alternativa de texto explicando la figura figure.
+
+    En visualizaciones de datos como gráficos, la leyenda o "figcaption" 
+    puede ser utilizada para resumir en formato de texto las tendencias o 
+    conclusiones, para beneficio de usuarios con discapacidades visuales. 
+    Otro de los desafíos se ocupa cómo mover fuera de la pantalla una versión 
+    en formato de tabla con los datos del gráfico (usando CSS) para ayudar 
+    a usuarios de lectores de pantalla.
+
+    Aquí hay un ejemplo: Ten en cuenta que el elemento figcaption va 
+    dentro de las etiquetas figure y se puede combinar con otros elementos:
+
+        <figure>
+            <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+            <br>
+            <figcaption>
+                Master Camper Cat demonstrates proper form of a roundhouse kick.
+            </figcaption>
+        </figure>
+
+
+* Mejora la accesibilidad del campo de formulario con el elemento 
+    label (etiqueta)
+        
+    La mejora de la accesibilidad con el marcado semántico HTML se aplica al 
+    uso de nombres de etiquetas y atributos apropiados. Los próximos desafíos 
+    cubren algunos escenarios importantes utilizando atributos en formularios.
+
+    La etiqueta label contiene el texto para un elemento específico de control 
+    de formulario, por lo general el nombre o etiqueta para una elección. 
+    Esto vincula el significado al elemento y hace que el formulario se 
+    lea mejor. El atributo for en una etiqueta label asocia de manera explícita 
+    dicho label con el control de formulario utilizado por los lectores de 
+    pantalla.
+
+    Ya aprendiste sobre botones de radio y sus etiquetas en una lección de la 
+    sección de HTML básico. En esa lección, colocamos el elemento de entrada 
+    del botón de radio dentro de la etiqueta label junto con la etiqueta del 
+    texto para hacer que el texto se pueda cliquear. Otra forma de lograr esto 
+    es usando el atributo for, como se explica en esta lección.
+
+    El valor del atributo for debe ser igual al valor del atributo id del 
+    formulario de control. Por ejemplo:
+
+        <form> 
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name"> 
+        </form>
+
+
+* Envuelve los botones de radio en un elemento fieldset para una 
+    mejor accesibilidad
+
+    El siguiente tema sobre formularios cubre la accesibilidad de los botones 
+    tipo radio. A cada opción se le da una label (etiqueta) con un atributo 
+    for vinculado al id del elemento correspondiente como se cubrió en el 
+    último desafío. Dado que los botones de radio a menudo vienen en un grupo 
+    donde el usuario debe elegir uno, hay una manera de mostrar semánticamente 
+    que las opciones son parte de un conjunto.
+
+    La etiqueta fieldset rodea toda la agrupación de botones de radio para 
+    lograr esto. A menudo utiliza una etiqueta de legend para proporcionar 
+    una descripción para la agrupación, que lectores de pantalla leen por 
+    cada opción en el elemento fieldset.
+
+    El contenedor fieldset y la etiqueta legend no son necesarias cuando las 
+    opciones se explican por sí mismas, como selección de género. Usar label 
+    con el atributo for para cada botón de radio es suficiente.
+
+    Aquí hay un ejemplo:
+
+        <form> 
+            <fieldset> 
+                <legend>Choose one of these three items:</legend> 
+                <input id="one" type="radio" name="items" value="one"> 
+                <label for="one">Choice One</label>
+                <br> 
+                <input id="two" type="radio" name="items" value="two"> 
+                <label for="two">Choice Two</label>
+                <br> 
+                <input id="three" type="radio" name="items" value="three"> 
+                <label for="three">Choice Three</label> 
+            </fieldset> 
+        </form>
+
+
+* Agrega un selector de fechas accesible
+
+    Los formularios suelen incluir el campo input, que puede usarse para crear 
+    diferentes tipos de controles en los formularios. El atributo type en este 
+    elemento indica el tipo de elemento input a crear.
+
+    Puede que hayas visto los tipos de campo text y submit en desafíos 
+    anteriores. HTML5 además introdujo una opción para especificar un campo 
+    date para fechas. Dependiendo del soporte de los navegadores, un selector 
+    de fechas debería aparecer cuando el campo input esté en foco, y esto hace 
+    mucho más sencillo para los usuarios cargar información en el formulario.
+
+    Para los navegadores más antiguos, el tipo será por defecto text, por lo 
+    que ayuda a mostrar a los usuarios el formato de fecha(date) esperado en 
+    el texto label o placeholder por si acaso.
+
+    Aquí hay un ejemplo:
+
+        <label for="input1">Enter a date:</label> 
+        <input type="date" id="input1" name="input1">
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
