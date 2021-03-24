@@ -1,0 +1,227 @@
+* Agregar un texto alternativo a las imágenes para accesibilidad 
+    de usuarios con dificultades de la vista
+
+    Probablemente hayas visto un atributo alt en una etiqueta img 
+    en otros desafíos. El atributo alt describe el contenido de la 
+    imagen y proporciona un texto alternativo. Un atributo alt 
+    ayuda en los casos en que la imagen no se carga o un usuario 
+    no pueda verla. Los motores de búsqueda también lo utilizan 
+    para comprender que contiene una imagen e incluirla en los 
+    resultados de búsqueda. Aquí hay un ejemplo:
+
+    <img src="importantLogo.jpeg" alt="Company logo">
+
+    Las personas con dificultades visuales dependen de lectores de 
+    pantalla para convertir el contenido web a una interfaz de audio. 
+    Por esta razón, no podrán recibir la información si solo se 
+    les presenta de manera visual. En el caso de las imágenes, los 
+    lectores de pantalla pueden acceder el atributo alt y leer su 
+    contenido para proporcionar información clave.
+
+    Un buen texto alt le brinda al lector una breve descripción de 
+    la imagen. Siempre deberías incluir el atributo alt en 
+    tus imágenes. Además, según la especificación de HTML5, esto 
+    ahora se considera obligatorio.
+
+
+* Aprende cuando el texto alternativo debe dejarse en blanco
+
+    En el último desafío, aprendiste que es obligatorio incluir un 
+    atributo alt al usar etiquetas img. Sin embargo, a veces las 
+    imágenes se agrupan con un título que ya las describe, o se 
+    usan solo para decoración. En estos casos el texto alt puede 
+    parecer redundante o innecesario.
+
+    Cuando una imagen ya se explica con el contenido de texto o 
+    no agrega significado a una página, img todavía necesita un 
+    atributo alt, pero se puede establecer en una cadena vacía. 
+    Aquí hay un ejemplo:
+
+    <img src="visualDecoration.jpeg" alt="">
+
+    Las imágenes de fondo generalmente también caen bajo la 
+    etiqueta "decorativa". Sin embargo, normalmente se aplican 
+    con reglas CSS y, por lo tanto, no forman parte del proceso 
+    de lectores de pantalla del lenguaje de marcado.
+
+    Nota: Para imágenes con un título, es posible que aún desees 
+    incluir texto alt ya que ayuda a los motores de búsqueda a 
+    catalogar el contenido de la imagen.
+
+
+* Usa títulos para mostrar relaciones jerárquicas de contenido
+
+    Los títulos (h1 a h6 elementos) son etiquetas de caballo de batalla 
+    que ayudan a proporcionar estructura y etiquetado a su contenido. 
+    Los lectores de pantalla se pueden configurar para leer solo los 
+    títulos de una página para que el usuario obtenga un resumen. 
+    Esto significa que es importante que las etiquetas de los títulos 
+    en tu lenguaje de marcado tengan un significado semántico y se 
+    relacionen entre sí, no se elijan simplemente por sus valores 
+    de tamaño.
+
+    Significado semántico* significa que la etiqueta que usas alrededor 
+    del contenido indica el tipo de información que contiene.
+    Si estuvieras escribiendo un documento con una introducción, 
+    un cuerpo y una conclusión, no tendría mucho sentido poner la 
+    conclusión como una subsección del cuerpo en tu esquema. 
+    Debería ser su propia sección. Del mismo modo, las etiquetas de 
+    los títulos en una página web deben ir en orden e indicar las 
+    relaciones jerárquicas de su contenido.
+
+    Los títulos con rango igual (o superior) comienzan nuevas 
+    secciones implícitas, los títulos con rango inferior comienzan 
+    subsecciones de la anterior.
+
+    Como ejemplo, una página con un elemento h2 seguido de varias 
+    subsecciones marcadas con etiquetas h4 confundirá a un lector de 
+    pantalla. Con seis opciones, es tentador usar una etiqueta porque 
+    se ve mejor en un navegador, pero puede usar CSS para editar el 
+    tamaño relativo.
+
+    Un punto final, cada página siempre debe tener un (y solo un) 
+    elemento h1, que es el tema principal de tu contenido. 
+    Este y los otros títulos son utilizados en parte por los 
+    motores de búsqueda para comprender el tema de la página.
+
+
+* Salta directamente al contenido usando el elemento principal (main)
+
+    HTML5 introdujo varios elementos nuevos que dan a los 
+    desarrolladores más opciones y al mismo tiempo incorporan 
+    características de accesibilidad. Estas etiquetas incluyen main, 
+    header, footer, nav, article, y section, entre otros.
+
+    De forma predeterminada, un navegador muestra estos elementos 
+    de forma similar al humilde div. Sin embargo, usarlos cuando 
+    sea apropiado le da un significado adicional a tu lenguaje de 
+    marcado. El nombre de la etiqueta solo puede indicar el tipo 
+    de información que contiene, lo que agrega significado semántico 
+    a ese contenido. Las tecnologías de asistencia pueden acceder
+    a esta información para proporcionar mejores opciones de resumen 
+    de páginas o de navegación a sus usuarios.
+
+    El elemento main se usa para envolver (lo adivinaste) el contenido 
+    principal, y solo debe haber uno por página. Su propósito es 
+    rodear la información relacionada con el tema central de tu página. 
+    No está destinado a incluir elementos que se repiten en todas las 
+    páginas, como enlaces de navegación o banners.
+
+    La etiqueta main también tiene una característica de referencia 
+    incrustada que la tecnología de asistencia puede utilizar para 
+    navegar al contenido principal rápidamente. Si alguna vez has 
+    visto un enlace de "Saltar al contenido principal" en la parte 
+    superior de la página, el uso de la etiqueta main proporciona 
+    automáticamente esa funcionalidad a los dispositivos de asistencia.
+
+
+* Envuelve el contenido en el elemento article
+
+    article es otro de los nuevos elementos de HTML5 que añaden 
+    significado semántico a su marcado. article es un elemento 
+    seccionador y se utiliza para envolver contenido independiente 
+    y autónomo. La etiqueta funciona bien con entradas de blog, 
+    publicaciones en el foro o artículos de noticias.
+
+    Determinar si el contenido puede ser independiente suele ser 
+    una cuestión de criterio, pero puedes hacer un par de pruebas 
+    simples. Pregúntate, si elimino todo el contexto circundante, 
+    ¿ese contenido aún tendría sentido? Del mismo modo, para el 
+    texto, ¿se mantendría el contenido si estuviera en una fuente RSS?
+
+    Recuerda que las personas que usan tecnologías de asistencia 
+    dependen de un lenguaje de marcado organizado y semánticamente 
+    significativo para comprender mejor su trabajo.
+
+    Nota: El elemento section también es nuevo HTML5, y tiene 
+    significado semántico ligeramente diferente al de article. 
+    Un article es para contenido independiente, y una section es 
+    para agrupar contenido relacionado temáticamente. Se pueden usar 
+    uno dentro del otro, según sea necesario. Por ejemplo, si un libro 
+    es el article, entonces cada capítulo es una section. Cuando no 
+    haya relación entre grupos de contenido, usa un div.
+
+        <div>       - grupos de contenido 
+        <section>   - grupos de contenido relacionado 
+        <article>   - grupos independientes, contenido autónomo
+
+
+
+* Haz que la navegación del lector de pantalla sea más fácil con el 
+    encabezado Landmark
+        
+    El siguiente elemento HTML5 que agrega significado semántico y mejora 
+    la accesibilidad es la etiqueta header. Se usa para envolver 
+    información introductoria o enlaces de navegación para su etiqueta 
+    principal y funciona bien con el contenido que se repite en la parte 
+    superior en varias páginas.
+
+    header comparte la función landmark integrada que viste con main, 
+    lo que permite a las tecnologías de asistencia navegar rápidamente 
+    a ese contenido.
+
+    Nota: El header está diseñado para usarse dentro de la etiqueta body 
+    de tu documento HTML. Es diferente al elemento head, que contiene el 
+    título de la página, la meta información, etc.
+
+
+* Haz que la navegación del lector de pantalla sea más fácil con 
+    el nav Landmark 
+
+    El elemento nav es otro elemento de HTML5 con la función de punto 
+    de referencia insertado para facilitar la navegación del lector 
+    de pantalla. Esta etiqueta esta destinada a envolver los principales 
+    enlaces de navegación en tu página.
+
+    Si hay enlaces internos repetidos en la parte de la página, no es 
+    necesario usar el lenguaje de marcado con aquellos con una etiqueta 
+    nav también. Usando una etiqueta footer (cubierto en el próximo desafío) 
+    es suficiente.
+
+* Haz que la navegación del lector de pantalla sea más fácil con 
+    el footer Landmark
+
+    Similar a header y nav, el elemento footer tiene una característica 
+    de referencia incorporada que permite a los dispositivos de 
+    asistencia navegar rápidamente hacia él. Se utiliza principalmente 
+    para contener información sobre derechos de autor o enlaces a 
+    documentos relacionados que normalmente se encuentran en la parte 
+    inferior de una página.
+
+* Mejorar la accesibilidad del contenido de audio con el elemento de audio
+
+    El elemento audio de HTLM le da un significado semántico cuando 
+    contiene sonido o contenido de flujo de audio en el código. El 
+    contenido del audio también necesita un texto alternativo para 
+    que las personas sordas o con dificultad para escuchar puedan acceder 
+    al mismo. Para esto debe tener un texto cercano en la página o un 
+    enlace a una transcripción.
+
+    La etiqueta de audio suporta los atributos controls. Esto muestra los 
+    controles por defecto de reproducir, pausar, entre otros controles, 
+    y soporta la funcionalidad del teclado. Este es un atributo booleano 
+    por lo que no necesita un valor, su presencia en la etiqueta activa 
+    la configuración.
+
+    Acá tenemos un ejemplo:
+
+        <audio id="meowClip" controls>
+        <source src="audio/meow.mp3" type="audio/mpeg">
+        <source src="audio/meow.ogg" type="audio/ogg">
+        </audio>
+
+    Note: El contenido multimedia generalmente tiene componentes visuales 
+    y de audio. Se necesita sincronizar los subtítulos y una transcripción 
+    para que los usuarios con dificultades de vista o con problemas para 
+    escuchar puedan tener acceso a las mismas. Por lo general, un 
+    desarrollador de web no se responsabiliza de la creación de subtítulos 
+    o transcripciones pero necesita saber para incluirlos.
+
+
+
+
+
+
+
+
+
