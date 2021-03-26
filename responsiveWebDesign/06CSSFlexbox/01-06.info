@@ -1,0 +1,74 @@
+* Utiliza display: flex para posicionar dos cajas
+
+    Esta sección utiliza estilos de desafío alternos para mostrar cómo 
+    usar CSS para posicionar elementos de una manera flexible. 
+    En primer lugar, un desafío explicará la teoría, luego un desafío 
+    práctico utilizando un simple componente de tweet aplicará el 
+    concepto de flexbox.
+
+    Colocar la propiedad CSS display: flex; en un elemento te permite 
+    usar otras propiedades flex para construir una página responsiva.
+
+
+* Agrega superpoderes flex al tweet incrustado
+
+    A la derecha está el tweet incrustado que se utilizará como ejemplo 
+    práctico. Algunos de los elementos lucirían mejor con una 
+    disposición diferente. El último desafío demostró display: flex. 
+    Aquí la agregaras a varios componentes en el tweet incrustado para 
+    empezar a ajustar su posición.
+
+* Utiliza la propiedad flex-direction para hacer una fila
+
+    Agregando display: flex a un elemento lo convierte en un contenedor 
+    flexible. Esto permite alinear cualquier elemento secundario de ese 
+    elemento en filas o columnas. Para ello, agrega la propiedad 
+    flex-direction al elemento principal y configúralo en fila o columna. 
+    La creación de una fila alineara los elementos secundarios 
+    horizontalmente, y la creación de una columna alineara los elementos 
+    secundarios verticalmente.
+
+    Otras opciones para flex-direction son row-reverse y column-reverse.
+
+    Nota: El valor predeterminado para la propiedad flex-direction es row.
+
+
+* Aplica la propiedad flex-direction para crear filas en el tweet Insertado
+
+    El header y footer en el ejemplo de tweet insertado tienen elementos 
+    secundarios que podrían organizarse como filas usando la propiedad 
+    flex-direction. Esto le dice a CSS que alinee los hijos horizontalmente.
+
+
+* Utiliza la propiedad flex-direction para hacer una columna
+
+    Los dos últimos desafíos usaron la propiedad flex-direction establecida 
+    en row. Esta propiedad también puede crear una columna apilando 
+    verticalmente los hijos de un contenedor flex.
+
+
+* Aplica la propiedad flex-direction para crear filas en el tweet insertado
+
+    El header y footer del tweet insertado usaron previamente la propiedad 
+    flex-direction con un valor de fila. De manera similar, los elementos 
+    dentro del elemento .profile-name funcionarían bien apilados 
+    como una columna.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
