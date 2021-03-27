@@ -24,3 +24,19 @@
                 si están en columnas.
 
 
+* Utiliza la propiedad flex-shrink para reducir elementos
+
+    Hasta ahora, todas las propiedades en los desafíos se aplican al 
+    contenedor flexible (el padre de los elementos flex). Sin embargo, 
+    hay varias propiedades útiles para los elementos flex.
+
+    La primera es la propiedad flex-shrink. Cuando se usa, permite que 
+    un elemento se contraiga si el contenedor flex es demasiado pequeño. 
+    Los elementos se reducen cuando el ancho del contenedor principal es 
+    menor que el ancho combinado de todos los elementos flex dentro del él.
+
+    La propiedad flex-shrink toma números como valores. Cuando mayor sea 
+    el número, más se reducirá en comparación con los otros elementos en 
+    el contenedor. Por ejemplo, si un elemento tiene un flex-shrink con 
+    valor de 1 y el otro tiene un flex-shrink con valor de 3, el que tiene 
+    el valor de 3 se reducirá tres veces más que el otro.
