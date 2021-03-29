@@ -83,7 +83,13 @@
     flex: 0 1 auto;.
 
 
+* Usa la propiedad order para reorganizar los elementos
 
+    La propiedad order se utiliza para indicarle a CSS el orden en que 
+    aparecen los elementos flexibles en el contenedor flex. Por defecto, 
+    los elementos aparecerán en el mismo orden que vienen en el HTML de 
+    origen. La propiedad toma números como valores, y se pueden usar 
+    números negativos.
 
 
 
