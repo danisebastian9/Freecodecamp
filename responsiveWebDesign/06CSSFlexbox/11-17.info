@@ -92,7 +92,16 @@
     números negativos.
 
 
+* Usa la propiedad align-self
 
+    La última propiedad para elementos flexibles es align-self. 
+    Esta propiedad te permite ajustar la alineación de cada elemento 
+    individualmente, en lugar de ajustarlos todos a la vez. Esto es útil 
+    ya que otras técnicas comunes de ajuste usan las propiedades CSS float, 
+    clear, y vertical-align, las cuales no funcionan en elementos flexibles.
+
+    align-self acepta los mismos valores que align-items y reemplazará 
+    cualquier valor establecido por la propiedad align-items.
 
 
 
