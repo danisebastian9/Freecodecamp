@@ -55,3 +55,40 @@
     tres veces más que el otro.
 
 
+* Usa la propiedad flex-basis para establecer el tamaño inicial 
+    de un elemento
+
+    La propiedad flex-basis especifica el tamaño inicial del elemento 
+    antes de que CSS haga ajustes con flex-shrink o flex-grow.
+
+    Las unidades usadas por la propiedad flex-basis son las mismas 
+    que otras propiedades de tamaño (px, em, %, etc.). El valor auto 
+    dimensiona los elementos basándose en el contenido.
+
+
+* Usa la propiedad abreviada flex
+
+    Hay un atajo disponible para establecer varias propiedades flex a 
+    la vez. Las propiedades flex-grow, flex-shrink, y flex-basis pueden 
+    establecerse utilizando la propiedad flex.
+
+    Por ejemplo, 
+        flex: 1 0 10px; 
+    establecerá las propiedades del elemento en flex-grow: 1;, 
+    flex-shrink: 0;, 
+    y 
+    flex-basis: 10px;.
+
+    La configuración predeterminada de la propiedad es 
+    flex: 0 1 auto;.
+
+
+
+
+
+
+
+
+
+
+
