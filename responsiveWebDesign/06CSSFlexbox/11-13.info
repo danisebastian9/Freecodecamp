@@ -40,3 +40,18 @@
     el contenedor. Por ejemplo, si un elemento tiene un flex-shrink con 
     valor de 1 y el otro tiene un flex-shrink con valor de 3, el que tiene 
     el valor de 3 se reducirá tres veces más que el otro.
+
+
+* Usa la propiedad flex-grow para expandir elementos
+
+    Lo contrario de flex-shrink es la propiedad flex-grow. 
+    Recuerda que flex-shrink controla el tamaño de los elementos 
+    cuando el contenedor se encoge. La propiedad flex-grow controla 
+    el tamaño de los elementos cuando el contenedor primario se expande.
+
+    Utilizando un ejemplo similar al del último desafío, 
+    si un elemento tiene un flex-grow con valor de 1 y el otro tiene 
+    un flex-grow con valor de 3, el que tiene el valor de 3 crecerá 
+    tres veces más que el otro.
+
+
