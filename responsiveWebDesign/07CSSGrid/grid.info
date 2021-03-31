@@ -1,0 +1,10 @@
+Crea tu primera CSS Grid
+
+    Convierte cualquier elemento HTML en una grid al establecer 
+    la propiedad display a grid. Esto te da la habilidad de usar 
+    todas las demás propiedades asociadas con CSS Grid.
+
+    Nota: en CSS Grid, el elemento padre se refiere como el 
+    contenedor y sus hijos se llaman elementos.
+
+
