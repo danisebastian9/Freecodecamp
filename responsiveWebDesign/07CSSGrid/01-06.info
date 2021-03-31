@@ -69,6 +69,32 @@
     quinta columna.
 
 
+* Crea un espacio entre columnas usando grid-column-gap
+
+    Hasta ahora en las grids que has creado, las columnas 
+    han estado todas juntas. Algunas veces querrás un 
+    espacio entre las columnas. 
+    Para agregar un espacio entre las columnas, usa la 
+    propiedad grid-column-gap de la siguiente manera:
+
+        grid-column-gap: 10px;
+    
+    Esto crea espacios vacíos de 10px entre todas las 
+    columnas.
+
+
+* Crea un espacio entre filas usando grid-row-gap
+
+    Puedes agregar un espacio entre las filas usando 
+    grid-row-gap de la misma manera en la que agregaste 
+    un espacio entre las columnas en el desafío anterior.
+
+
+
+
+
+
+
 
 
 
