@@ -101,7 +101,34 @@
     los espacios entre las columnas.
 
 
+* Usa grid-column para controlar espaciado
 
+    Hasta este punto, todas las propiedades que hemos discutido 
+    son para los contenedores de cuadrícula (grid). 
+    La propiedad grid-column es la primera que usaremos para 
+    los propios elementos de la cuadrícula.
+
+    Las líneas horizontales y verticales hipotéticas que crean 
+    la cuadrícula son referidas como líneas. 
+    Estas líneas son enumeradas empezando con el 1 desde la 
+    esquina superior izquierda de la cuadrícula y se desplaza 
+    hacia la derecha para las columnas y hacia abajo para las 
+    filas, contando hacia arriba.
+
+    Así es como se ven las líneas para una grid de 3x3:
+        https://www.freecodecamp.org/espanol/learn/responsive-web-design/css-grid/use-grid-column-to-control-spacing
+
+    Para controlar la cantidad de columnas que un elemento tendrá, 
+    puedes usar la propiedad grid-column en conjunto con el número 
+    de las líneas en las que quieres que empiece y termine.
+
+    Aquí un ejemplo:
+
+    grid-column: 1 / 3;
+
+    Esto hará que el elemento empiece en la primera línea vertical 
+    de la grid a la izquierda y se extienda a la 3ra línea de la grid, 
+    ocupando dos columnas.
 
 
 
