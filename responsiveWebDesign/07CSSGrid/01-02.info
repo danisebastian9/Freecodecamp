@@ -90,7 +90,15 @@
     un espacio entre las columnas en el desafío anterior.
 
 
-
+* Agrega espacios más rápido con grid-gap
+    
+    grid-gap es una propiedad abreviada para grid-row-gap y 
+    grid-column-gap de los dos desafíos anteriores que es 
+    más conveniente usar. Si grid-gap tiene un valor, 
+    creará un espacio entre todas las filas y columnas. 
+    Sin embargo, si hay dos valores, usará el primero de estos 
+    para poner los espacios entre las filas y el segundo para 
+    los espacios entre las columnas.
 
 
 
