@@ -5,7 +5,10 @@
   justify-self: center;
 }
 
-.item3{background:PaleTurquoise;}
+.item3{
+    background:PaleTurquoise;
+    align-self: end;
+}
 .item4{background:LightPink;}
 .item5{background:PaleGreen;}
 
