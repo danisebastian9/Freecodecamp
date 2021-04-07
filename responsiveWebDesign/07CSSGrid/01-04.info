@@ -177,7 +177,11 @@
     los elementos de la grid hacia el alineamiento deseado.
 
 
+* Alinea todos los elementos verticalmente usando align-items
 
+    Usar la propiedad align-items en el contenedor de una grid 
+    establecerá el alineamiento vertical de todos los elementos 
+    de la grid.
 
 
 
