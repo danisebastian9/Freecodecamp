@@ -165,7 +165,16 @@
     desafío anterior.
 
 
+* Alinea todos los elementos horizontalmente usando justify-items
 
+    Algunas veces querrás que todos los elementos en tu CSS Grid 
+    compartan el mismo alineamiento. 
+    Puedes usar las propiedades aprendidas anteriormente y 
+    alinearlos individualmente, o puedes alinear todos a la vez 
+    horizontalmente usando justify-items en el contenedor de tu grid. 
+    Esta propiedad acepta los mismos valores aprendidos en los dos 
+    desafíos previos, siendo la única diferencia que moverá todos 
+    los elementos de la grid hacia el alineamiento deseado.
 
 
 
