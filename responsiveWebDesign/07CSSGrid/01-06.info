@@ -221,7 +221,25 @@
     la totalidad de la fila superior porque esa área se llama header.
 
 
+* Usa grid-area sin crear plantillas de área
 
+    La propiedad grid-area que aprendiste en el último desafío puede 
+    ser usada de otra manera. Si tu cuadrícula (grid) no tiene 
+    plantillas de área de referencia, puedes crear un área para un 
+    elemento sobre la marcha para ubicar los elementos de la 
+    siguiente manera:
+
+    item1 { grid-area: 1/1/2/4; }
+    
+    Esto usa los números de líneas aprendidos anteriormente para 
+    definir cuál será el área de ese elemento. 
+    Los números en el ejemplo anterior representan estos valores:
+
+    grid-area: horizontal line to start at / vertical line to start at 
+                / horizontal line to end at / vertical line to end at;
+    
+    Entonces, el elemento en el ejemplo ocupará las filas entre las 
+    líneas 1 y 2, y las columnas entre las líneas 1 y 4.
 
 
 
