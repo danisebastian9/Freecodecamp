@@ -288,6 +288,21 @@
     un ancho mínimo de 50px y máximo de 200px.
 
 
+* Crea diseños flexibles usando auto-fill
+    
+    La función de repetición viene con una opción llamada auto-fill. 
+    Esto te permite insertar automáticamente tantas filas o columnas 
+    del tamaño deseado como sea posible, dependiendo del tamaño del 
+    contenedor. Puedes crear diseños flexibles al combinar auto-fill 
+    con minmax, así:
+
+        repeat(auto-fill, minmax(60px, 1fr));
+
+    Cuando el tamaño del contenedor cambia, esta configuración sigue 
+    insertando columnas de 60px y estirándolas hasta que pueda 
+    insertar otra. Nota: Si a tu contenedor no le caben todos 
+    los elementos en una fila, los moverá hacia abajo a una nueva fila.
+
 
 
 
