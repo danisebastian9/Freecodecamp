@@ -324,7 +324,16 @@
     En la vista previa, cuando el ancho del viewport es 300px o más, el número de columnas cambia de 1 a 2. El área de publicidad entonces ocupa la columna de la izquierda por completo.
 
 
+* Crea cuadrículas (grids) dentro de cuadrículas
 
+    Convertir un elemento a una cuadrícula solo afecta el comportamiento 
+    de sus descendientes directos. Entonces, al convertir un descendiente 
+    directo a una cuadrícula, obtienes una cuadrícula dentro de una 
+    cuadrícula.
+
+    Por ejemplo, al establecer las propiedades display and 
+    grid-template-columns del elemento con clase item3, 
+    creas una cuadrícula dentro de tu cuadrícula.
 
 
 
