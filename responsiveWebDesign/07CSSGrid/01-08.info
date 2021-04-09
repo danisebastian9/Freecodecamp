@@ -304,7 +304,17 @@
     los elementos en una fila, los moverá hacia abajo a una nueva fila.
 
 
+* Crea diseños flexibles usando auto-fit
 
+    auto-fit funciona casi igual que auto-fill. 
+    La única diferencia es que cuando el tamaño del contenedor 
+    excede el tamaño de todos sus elementos combinados, auto-fill 
+    sigue insertando filas o columnas vacías y empuja los elementos 
+    hacia un lado, mientras que auto-fit colapsa esas filas o columnas 
+    y estira los elementos para que cubran el tamaño del contenedor.
+
+    Nota: si a tu contenedor no le caben todos los elementos en una fila, 
+    los moverá hacia abajo a una nueva fila.
 
 
 
